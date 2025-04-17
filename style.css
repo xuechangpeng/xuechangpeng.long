@@ -1,0 +1,154 @@
+/* 一般设置 */
+html, body {
+    margin: 0; /* 移除默认的外边距 */
+    padding: 0; /* 移除默认的内边距 */
+  }
+  
+  html {
+    font-size: 10px; /* 设置 HTML 的基准字体大小为 10px（用于 rem 单位计算） */
+   
+  }
+  
+  body {
+    width: 100%; /* 设置页面主体宽度为父容器的 70% */
+    min-width: 800px; /* 设置最小宽度为 800px */
+    margin: 0 auto; /* 水平居中对齐 */
+  }
+
+
+
+
+
+/* 排版 */
+  h1, h2, h3 {
+    font-family: 'Long Cang', cursive; /* 设置标题字体为 'Long Cang'，并提供备用字体 */
+    color: #2a2a2a; /* 设置标题文字颜色为深灰色 */
+  }
+  
+  p, input, li {
+    font-family: 'Noto Sans SC', sans-serif; /* 设置段落、输入框和列表项字体为 'Noto Sans SC' */
+    color: #2a2a2a; /* 设置文字颜色为深灰色 */
+  }
+  
+  h1 {
+    font-size: 4rem; /* 设置一级标题字体大小为 40px（基于 html 的 font-size） */
+    text-align: center; /* 居中对齐 */
+    text-shadow: 2px 2px 10px black; /* 添加文字阴影效果 */
+  }
+  
+  h2 {
+    font-size: 3rem; /* 设置二级标题字体大小为 30px */
+    text-align: center; /* 居中对齐 */
+  }
+  
+  h3 {
+    font-size: 2.2rem; /* 设置三级标题字体大小为 22px */
+  }
+  
+  p, li {
+    font-size: 1.6rem; /* 设置段落和列表项字体大小为 16px */
+    line-height: 1.5; /* 设置行高为字体大小的 1.5 倍 */
+  }
+
+
+
+
+
+  /* 标题布局 */
+  header {
+    height: 150px; /* 固定 header 高度 */
+    margin-bottom: 10px; /* 下方外边距 */
+    display: flex; /* 使用弹性布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    overflow: hidden; /* 防止图片溢出 */
+    position: relative; /* 为子元素定位提供参考 */
+    
+  }
+  
+  main, nav, article, aside, footer, section {
+    background-color: rgba(200, 243, 212, 0.5); /* 设置所有主要区域的背景颜色为半透明绿色 */
+    padding: 1%; /* 设置内边距为 1% */
+  }
+  
+  h1 {
+    flex: 5; /* 在弹性布局中，设置 h1 占据 5 份空间 */
+    text-transform: uppercase; /* 将标题文字转换为大写 */
+  }
+  
+  header img {
+    width: 100%; /* 让图片宽度占满 header */
+    height: 100%; /* 让图片高度占满 header */
+    object-fit: cover; /* 保持图片比例，裁剪多余部分 */
+    display: block; /* 移除图片默认的 inline 特性 */
+  }
+  header a {
+    display: block; /* 将链接设置为块级元素 */
+    width: 100%; /* 占满 header 宽度 */
+    height: 100%; /* 占满 header 高度 */
+    text-decoration: none; /* 移除下划线 */
+}
+  
+  nav {
+    height: 50px; /* 设置导航栏高度为 50px */
+    flex: 100%; /* 在弹性布局中，设置导航栏占据 100% 空间 */
+    display: flex; /* 使用弹性布局 */
+  }
+  
+  nav ul {
+    padding: 0; /* 移除默认的内边距 */
+    list-style-type: none; /* 移除默认的列表样式 */
+    flex: 2; /* 在弹性布局中，设置 ul 占据 2 份空间 */
+    display: flex; /* 使用弹性布局 */
+  }
+  
+  nav li {
+    display: inline; /* 设置列表项为行内显示 */
+    text-align: center; /* 文本居中对齐 */
+    flex: 1; /* 在弹性布局中，设置每个列表项占据相等的空间 */
+  }
+  
+  nav a, nav span {
+    display: inline-block; /* 设置链接和文本为行内块级元素 */
+    font-size: 2rem; /* 设置字体大小为 20px */
+    height: 3rem; /* 设置高度为 30px */
+    line-height: 1.7; /* 设置行高为字体大小的 1.7 倍 */
+    text-transform: uppercase; /* 将文字转换为大写 */
+    text-decoration: none; /* 移除下划线 */
+    color: black; /* 设置文字颜色为黑色 */
+  }
+
+
+
+
+
+
+  /*主体布局 */
+  main {
+    display: flex; /* 使用弹性布局 */
+  }
+  
+  article, section {
+    flex: 4; /* 在弹性布局中，设置 article 和 section 占据 4 份空间 */
+  }
+  
+  aside {
+    flex: 1; /* 在弹性布局中，设置 aside 占据 1 份空间 */
+    margin-left: 10px; /* 设置左侧外边距为 10px */
+    padding: 1%; /* 设置内边距为 1% */
+    background-image: url("制作科技感长图.png");
+  }
+  
+  aside a {
+    display: block; /* 设置链接为块级元素 */
+    float: left; /* 浮动到左侧 */
+    width: 50%; /* 设置宽度为父容器的 50% */
+  }
+  
+  aside img {
+    max-width: 100%; /* 设置图片最大宽度为父容器的 100% */
+  }
+  
+  footer {
+    margin-top: 10px; /* 设置上方外边距为 10px */
+  }
